@@ -44,9 +44,6 @@ import org.bukkit.event.player.PlayerQuitEvent;
 import java.net.URL;
 import org.bukkit.ChatColor;
 import org.bukkit.command.ConsoleCommandSender;
-import static java.lang.Thread.sleep;
-import static java.lang.Thread.sleep;
-import static java.lang.Thread.sleep;
 
 
 
