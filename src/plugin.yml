@@ -6,8 +6,6 @@ author: xvojta
 
 main: com.javaminecraft.Slaparoo
 
-depend: [Essentials, BlockStore, TitleAPI]
-
 commands:
     sl:
         description: slaparoo comands (join, ...)
