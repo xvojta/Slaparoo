@@ -84,34 +84,40 @@ public class Slaparoo extends JavaPlugin
         Location spot = me.getLocation();
         
          
-        if (sender instanceof Player && me.isOp()) {
             if (label.equalsIgnoreCase("sl")) { 
-                if (arguments.length > 1) {
-                    if (arguments[0].equals("join")) {
-                        if (server.getPlayer(arguments[1]) != null && 
-                                playerJoin(server.getPlayer(arguments[1]))) 
-                        {                                
+                if (sender instanceof Player && me.isOp()) {
+                    if (arguments.length > 1) {
+                        if (arguments[0].equals("join")) {
+                            if (server.getPlayer(arguments[1]) != null && 
+                                    playerJoin(server.getPlayer(arguments[1]))) 
+                            {                                
                                 me.sendMessage(arguments[1] + " joined Slaparoo!");
-                        } else {
+                            } else {
                                 me.sendMessage(arguments[1] + " did NOT joined Slaparoo!");
+                            }
+                            return true;
                         }
-                        return true;
                     }
+                } else {
+                    me.sendMessage("You don't have permissions to this command!");
                 }
             }
             if (label.equalsIgnoreCase("slaparoosign")) { 
-                if (arguments.length > 0) {
-                    if (arguments[0].equals("on")) {
-                        signOn = true;
-                        me.sendMessage("slaparoo sign mode on !");
-                    } else {
-                        signOn = false;
-                        me.sendMessage("slaparoo sign mode off !");
+                if (sender instanceof Player && me.isOp()) {
+                    if (arguments.length > 0) {
+                        if (arguments[0].equals("on")) {
+                            signOn = true;
+                            me.sendMessage("slaparoo sign mode on !");
+                        } else {
+                            signOn = false;
+                            me.sendMessage("slaparoo sign mode off !");
+                        }
+                        return true;
                     }
-                    return true;
+                } else {
+                    me.sendMessage("You don't have permissions to this command!");
                 }
             }
-        }
         return false;
     }
     
