@@ -182,8 +182,7 @@ public class Slaparoo extends JavaPlugin
         if(event.getRespawnLocation().getWorld().getName().equals(SLAPAROO_WORLD_NAME)) {
             if(!gameIsRuning){
                 event.setRespawnLocation(Bukkit.getWorld(LOBBY_WORLD_NAME).getSpawnLocation());
-            }
-            if(gameIsRuning) {
+            } else {
                 dejSusenkuHraci(event.getPlayer());
             }
         }
