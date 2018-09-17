@@ -1,6 +1,6 @@
 # Slaparoo
 
-To-do:
-* Po celou dobu odpočtu se mohou přihlašovat další hráči
-* Respawn je aréně
-* Sušenka se přidá přímo do ruky
+## To-Do:
+* Players can join during the countdown @JakubNj
+* Respawn the player in the arena @xvojta
+* Weapon is equiped in hand @zdenek-nemec
